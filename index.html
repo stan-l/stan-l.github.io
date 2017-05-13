@@ -2,16 +2,25 @@
 <script src="js/typed.js"></script>
 <script>
 	document.addEventListener("DOMContentLoaded", function(){
-		Typed.new(".element", {
-			strings: ["First sentence.", "Second sentence."],
-			typeSpeed: 0
+		//Typed.new(".element", {
+		//	strings: ["Welcome", "从前有个庙，庙里有个老和尚..."],
+		//	typeSpeed: 0
+		Typed.new('#typed', {
+			stringsElement: document.getElementById('typed-strings'),
+			typeSpeed: 100,
+			startDelay: 1,
+			backSpeed: 1
 		});
 	});
 </script>
 
 <h2>Welcome 安门的博客</h2><br />
+<div id="typed-strings">
+	<p>从前有座山，山里有个庙，庙里有个两个和尚，大和尚对小和尚讲故事..</p>
+</div>
+<span id="typed"></span><br />
 
-<span class="element">
+<span class="element"> </span><br />
 <a href="os/disk-20170513.html">磁盘和文件</a>
-</span>
+
 </html>
